@@ -13,4 +13,6 @@ public interface AdvertisementRepository extends JpaRepository<Advertisement, In
     Optional<Advertisement> findByPreference(Preference preference);
 
     List<Advertisement> findAll();
+
+    List<Advertisement> findAdvertisementsByPreferenceIn(List<Preference> preferences);
 }
